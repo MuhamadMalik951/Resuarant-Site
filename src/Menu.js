@@ -48,7 +48,7 @@ export function menu() {
                 <div class="breakfast-firstrow">
 
                         <div class="breakfast-1">
-                            <img class="breakfastimg" src="../icons/breakfast-1.jpg (1).webp" alt="">
+                            <img class="breakfastimg" src="icons/breakfast1.jpg.webp" alt="">
                     <div class="breakfastdetail">
                         <div class="breakfastdetailtwo">
 
@@ -66,7 +66,7 @@ export function menu() {
 
 
                 <div class="breakfast-1">
-                    <img class="breakfastimg" src="../icons/breakfast-2.jpg.webp" alt="">
+                    <img class="breakfastimg" src="icons/breakfast2.jpg.webp" alt="">
                     <div class="breakfastdetail">
                         <div class="breakfastdetailtwo">
 
@@ -102,7 +102,7 @@ export function menu() {
                             </div>
                     </div>
                 </div>
-                <img class="breakfastimg" src="../icons/breakfast-3.jpg.webp" alt="">
+                <img class="breakfastimg" src="icons/breakfast3.jpg.webp" alt="">
                 </div>
 
 
@@ -120,7 +120,7 @@ export function menu() {
                             </div>
                         </div>
                     </div>
-                    <img class="breakfastimg" src="../icons/breakfast-4.jpg.webp" alt="">
+                    <img class="breakfastimg" src="icons/breakfast4.jpg.webp" alt="">
                 </div>
             </div>
 
@@ -129,7 +129,7 @@ export function menu() {
                 <div class="breakfast-firstrow">
 
                     <div class="breakfast-1">
-                        <img class="breakfastimg" src="../icons/breakfast-5.jpg.webp" alt="">
+                        <img class="breakfastimg" src="icons/breakfast5.jpg.webp" alt="">
                     <div class="breakfastdetail">
                         <div class="breakfastdetailtwo">
 
@@ -147,7 +147,7 @@ export function menu() {
 
 
                 <div class="breakfast-1">
-                    <img class="breakfastimg" src="../icons/breakfast-6.jpg.webp" alt="">
+                    <img class="breakfastimg" src="icons/breakfast6.jpg.webp" alt="">
                     <div class="breakfastdetail">
                         <div class="breakfastdetailtwo">
 
@@ -182,7 +182,7 @@ export function menu() {
                             </div>
                     </div>
                 </div>
-                <img class="breakfastimg" src="../icons/breakfast-7.jpg.webp" alt="">
+                <img class="breakfastimg" src="icons/breakfast7.jpg.webp" alt="">
                 </div>
 
 
@@ -200,7 +200,7 @@ export function menu() {
                             </div>
                         </div>
                     </div>
-                    <img class="breakfastimg" src="../icons/breakfast-8.jpg.webp" alt="">
+                    <img class="breakfastimg" src="icons/breakfast8.jpg.webp" alt="">
                 </div>
                 </div>
                 
@@ -216,14 +216,14 @@ export function menu() {
                 <div class="titlee">Tandoori Delights</div>
                 <div class="descripto ">Indulge in the exquisite flavors of our restaurant, where exceptional quality meets unparalleled hospitality for a memorable dining experience.</div>
                 <div class="socialicons">
-                    <img class="iconss" src="../icons/icons8-twitter-circled-50.png" alt="">
-                    <img class="iconss" src="../icons/icons8-facebook.svg" alt="">
-                    <img class="iconss" src="../icons/icons8-instagram-circle-30.png" alt="">
+                    <img class="iconss" src="icons/icons8twittercircled50.png" alt="">
+                    <img class="iconss" src="icons/icons8facebook.svg" alt="">
+                    <img class="iconss" src="icons/icons8instagramcircle30.png" alt="">
                 </div>
             </div>
             <div class="insta">
                 <div class="titlee">Instagram</div>
-                <img class="instapic" src="../icons/Instagram.png" alt="">
+                <img class="instapic" src="icons/Instagram.png" alt="">
                 
             </div>
             

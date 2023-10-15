@@ -80,14 +80,14 @@ export function contactUs(){
     <div class="titlee">Tandoori Delights</div>
     <div class="descripto ">Indulge in the exquisite flavors of our restaurant, where exceptional quality meets unparalleled hospitality for a memorable dining experience.</div>
     <div class="socialicons">
-        <img class="iconss" src="../icons/icons8-twitter-circled-50.png" alt="">
-        <img class="iconss" src="../icons/icons8-facebook.svg" alt="">
-        <img class="iconss" src="../icons/icons8-instagram-circle-30.png" alt="">
+        <img class="iconss" src="icons/icons8twittercircled50.png" alt="">
+        <img class="iconss" src="icons/icons8facebook.svg" alt="">
+        <img class="iconss" src="icons/icons8instagramcircle30.png" alt="">
     </div>
 </div>
 <div class="insta">
     <div class="titlee">Instagram</div>
-    <img class="instapic" src="../icons/Instagram.png" alt="">
+    <img class="instapic" src="icons/Instagram.png" alt="">
     
 </div>
 

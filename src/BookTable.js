@@ -34,7 +34,7 @@ export function bookTable(){
 html {
     /* background-image: linear-gradient(to right, #436dac, #0087c0, #00a0c6, #00b7be, #16cbab); */
     /* background-image:url(../icons/biryani_background.jpeg); */
-    background-image:url(../icons/background-min.jpg);
+    background-image:url(icons/backgroundmin.jpg);
     /* background-image:url(./background.webp); */
     background-repeat: no-repeat;
     background-size: cover     ;
@@ -146,7 +146,7 @@ grid-template-columns: 1fr; */
     gap: 3rem;
     height: 80vh;
     width: 35rem;
-    background-image:url(../icons/background-min.jpg);
+    background-image:url(icons/backgroundmin.jpg);
     /* background-image:url(../icons/biryani_background.jpeg); */
     /* background-blend-mode: screen; */
     background-size: cover;
