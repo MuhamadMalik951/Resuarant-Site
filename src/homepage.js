@@ -40,19 +40,19 @@ const restaurantHTML = `
         </div>
         <div class="dishes">
             <div class="dish">
-                <img src="../icons/breakfast-1.jpg.webp" alt="">
+                <img src="icons/breakfast1.jpg.webp" alt="">
                 <div class="firstdish">Grilled Beef</div>
             </div>
             <div class="dish">
-                <img src="../icons/breakfast-2.jpg.webp" alt="">
+                <img src="icons/breakfast2.jpg.webp" alt="">
                 <div class="firstdish">Pasties</div>
             </div>
             <div class="dish">
-                <img src="../icons/breakfast-3.jpg.webp" alt="">
+                <img src="icons/breakfast3.jpg.webp" alt="">
                 <div class="firstdish">Butter Salad</div>
             </div>
             <div class="dish">
-                <img src="../icons/breakfast-4.jpg.webp" alt="">
+                <img src="icons/breakfast4.jpg.webp" alt="">
                 <div class="firstdish">Egg Salad</div>
             </div>
         </div>
