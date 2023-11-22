@@ -1,15 +1,12 @@
-import { menu } from "./Menu";
-import { aboutFunction } from "./about";
-import { Homefunction } from "./homepage";
-import {contactUs} from "./contact";
+import { menu } from './Menu';
+import { aboutFunction } from './about';
+import { Homefunction } from './homepage';
+import { contactUs } from './contact';
 
-export function bookTable(){
+export function bookTable() {
+  const content = document.querySelector('.content');
 
-
-
-    const content = document.querySelector('.content')
-
-    const restaurantHTML = `
+  const restaurantHTML = `
 
     <style>
 
@@ -326,19 +323,18 @@ input[type=checkbox] {
         </div>
     </form>
 </div>
-`
-content.innerHTML = restaurantHTML
+`;
+  content.innerHTML = restaurantHTML;
 
-const homeButton = document.querySelector('.home');
-homeButton.addEventListener('click', Homefunction)
+  const homeButton = document.querySelector('.home');
+  homeButton.addEventListener('click', Homefunction);
 
-const menuButton = document.querySelector('.menu.menuu');
-menuButton.addEventListener('click', menu)
+  const menuButton = document.querySelector('.menu.menuu');
+  menuButton.addEventListener('click', menu);
 
-const aboutButton = document.querySelector('.about');
-aboutButton.addEventListener('click', aboutFunction)
+  const aboutButton = document.querySelector('.about');
+  aboutButton.addEventListener('click', aboutFunction);
 
-const contactButton = document.querySelector('.contact')
-contactButton.addEventListener('click', contactUs)
-
+  const contactButton = document.querySelector('.contact');
+  contactButton.addEventListener('click', contactUs);
 }

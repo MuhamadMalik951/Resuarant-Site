@@ -1,16 +1,12 @@
-import { Homefunction } from "./homepage";
-import { menu } from "./Menu";
-import {contactUs} from "./contact";
-import { bookTable } from "./BookTable";
-
-
-
+import { Homefunction } from './homepage';
+import { menu } from './Menu';
+import { contactUs } from './contact';
+import { bookTable } from './BookTable';
 
 export function aboutFunction() {
-    
-    const content = document.getElementById('content')
+  const content = document.getElementById('content');
 
-    const restaurantHTML = `      
+  const restaurantHTML = `      
 
     <div class="topbar topbarsignup">
             <div class="topbar-cover">
@@ -152,22 +148,23 @@ export function aboutFunction() {
 
 
 </div>
-</div> `
+</div> `;
 
-    content.innerHTML = restaurantHTML;
+  content.innerHTML = restaurantHTML;
 
-    const homeButton = document.querySelector('.home')
-    homeButton.addEventListener('click', Homefunction)
+  const homeButton = document.querySelector('.home');
+  homeButton.addEventListener('click', Homefunction);
 
-    const menuButton = document.querySelector('.menu.menuu');
-    menuButton.addEventListener('click', menu)
+  const menuButton = document.querySelector('.menu.menuu');
+  menuButton.addEventListener('click', menu);
 
+  const contactButton = document.querySelector('.contact');
+  contactButton.addEventListener('click', contactUs);
 
-    const contactButton = document.querySelector('.contact')
-    contactButton.addEventListener('click', contactUs)
+  const bookTablee = document.querySelector('.bookatable.bookatablesignup');
+  bookTablee.addEventListener('click', bookTable);
 
-    const bookTablee = document.querySelector('.bookatable.bookatablesignup')
-    bookTablee.addEventListener('click', bookTable) 
-
-
+  const menuItem = document.querySelector('div.about');
+  console.log(menuItem);
+  menuItem.style.color = 'rgb(233, 170, 34)';
 }

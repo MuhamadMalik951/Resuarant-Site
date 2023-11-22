@@ -1,17 +1,14 @@
-import { Homefunction } from "./homepage";
-import { aboutFunction } from "./about";
-import {contactUs} from "./contact";
-import { bookTable } from "./BookTable";
-
+import { Homefunction } from './homepage';
+import { aboutFunction } from './about';
+import { contactUs } from './contact';
+import { bookTable } from './BookTable';
 
 export function menu() {
+  // const menuButton = document.querySelector('.menuu')
+  // menuButton.addEventListener('click', function(){
+  const content = document.getElementById('content');
 
-
-    // const menuButton = document.querySelector('.menuu')
-    // menuButton.addEventListener('click', function(){
-        const content = document.getElementById('content')
-
-        const restaurantHTML = `
+  const restaurantHTML = `
     
         <div class="topbar topbarsignup">
             <div class="topbar-cover">
@@ -274,21 +271,22 @@ export function menu() {
 </div>
 </div>
 </div>
-`
-content.innerHTML = restaurantHTML;
+`;
+  content.innerHTML = restaurantHTML;
 
+  const homeButton = document.querySelector('.home');
+  homeButton.addEventListener('click', Homefunction);
 
-const homeButton = document.querySelector('.home')
-homeButton.addEventListener('click', Homefunction)
+  const aboutButton = document.querySelector('.about');
+  aboutButton.addEventListener('click', aboutFunction);
 
-const aboutButton = document.querySelector('.about')
-aboutButton.addEventListener('click', aboutFunction)
+  const contactButton = document.querySelector('.contact');
+  contactButton.addEventListener('click', contactUs);
 
+  const bookTablee = document.querySelector('.bookatable.bookatablesignup');
+  bookTablee.addEventListener('click', bookTable);
 
-const contactButton = document.querySelector('.contact')
-    contactButton.addEventListener('click', contactUs)
-
-    const bookTablee = document.querySelector('.bookatable.bookatablesignup')
-    bookTablee.addEventListener('click', bookTable) 
+  const menuItem = document.querySelector('div.menuu');
+  console.log(menuItem);
+  menuItem.style.color = 'rgb(233, 170, 34)';
 }
-

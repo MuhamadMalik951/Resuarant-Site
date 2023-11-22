@@ -1,19 +1,17 @@
-import { menu } from "./Menu";
-import { aboutFunction } from "./about";
-import {contactUs} from "./contact"
-import { bookTable } from "./BookTable";
+import { menu } from './Menu';
+import { aboutFunction } from './about';
+import { contactUs } from './contact';
+import { bookTable } from './BookTable';
 
 export function Homefunction() {
+  // const linkElement = document.createElement("link");
+  // linkElement.rel = "stylesheet";
+  // linkElement.href = "../dist/style.css";
+  // document.head.appendChild(linkElement);
 
-    // const linkElement = document.createElement("link");
-    // linkElement.rel = "stylesheet";
-    // linkElement.href = "../dist/style.css";
-    // document.head.appendChild(linkElement);
+  //     const content = document.getElementById('content');
 
-        
-    //     const content = document.getElementById('content');
-        
-const restaurantHTML = `
+  const restaurantHTML = `
 <div class="topbar topbarsignup">
             <div class="topbar-cover">
 
@@ -35,7 +33,11 @@ const restaurantHTML = `
         <div class="center-text">
             <div class="text">
                 <div class="delicious">Tandoori Delights</div>
-                <div class="biryani">DELICIOUS SPECIALTIES</div>
+                <div class="biryani">
+                    <div class="left-arrow"><img class="arrow" src="./icons/icons8-left-arrow-64.png" alt=""></div>
+                    <div class="biryani">DELICIOUS SPECIALTIES</div>
+                    <div class="right-arrow"><img class="arrow" src="./icons/icons8-right-arrow-64.png" alt=""></div>
+                </div>
             </div>
         </div>
         <div class="dishes">
@@ -160,20 +162,75 @@ const restaurantHTML = `
 </div>
 `;
 
-content.innerHTML = restaurantHTML;
+  content.innerHTML = restaurantHTML;
 
+  const menuButton = document.querySelector('.menu.menuu');
+  menuButton.addEventListener('click', menu);
 
-const menuButton = document.querySelector('.menu.menuu');
-    menuButton.addEventListener('click', menu)
+  const aboutButton = document.querySelector('.about');
+  aboutButton.addEventListener('click', aboutFunction);
 
-const aboutButton = document.querySelector('.about');
-    aboutButton.addEventListener('click', aboutFunction) 
-        
-const contactButton = document.querySelector('.contact')
-    contactButton.addEventListener('click', contactUs)
+  const contactButton = document.querySelector('.contact');
+  contactButton.addEventListener('click', contactUs);
 
-const bookTablee = document.querySelector('.bookatable.bookatablesignup')
-    bookTablee.addEventListener('click', bookTable) 
+  const bookTablee = document.querySelector('.bookatable.bookatablesignup');
+  bookTablee.addEventListener('click', bookTable);
+
+  const container = document.querySelector('.container');
+
+  let index = 0;
+  let arrowIndex = 0;
+  function incrementIndex() {
+    if (index >= 5) {
+      index = 0;
+    }
+    index++;
+    container.className = 'container' + ' ' + 'background' + index;
+  }
+  function decrementIndex() {
+    if (index >= 0) {
+      index = 5;
+    }
+    index--;
+    container.className = 'container' + ' ' + 'background' + index;
+  }
+
+  function arrowIncrementIndex() {
+    if (arrowIndex >= 5) {
+      arrowIndex = 0;
+    }
+    arrowIndex++;
+    container.className = 'container' + ' ' + 'background' + arrowIndex;
+  }
+
+  function arrowDecrementIndex() {
+    if (arrowIndex <= -1) {
+      arrowIndex = 5;
+    }
+    arrowIndex--;
+    console.log(container.classList)
+    container.className = 'container' + ' ' + 'background' + arrowIndex;
+  }
+  setInterval(() => {
+    incrementIndex();
+  }, 5000);
+
+  const menuItem = document.querySelector('div.home');
+  console.log(menuItem);
+  menuItem.style.color = 'rgb(233, 170, 34)';
+
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+  console.log(leftArrow);
+  leftArrow.addEventListener('click', () => {
+      arrowDecrementIndex();
+    console.log('left arrow is being clicked');
+    console.log(arrowIndex);
+  });
+  
+  rightArrow.addEventListener('click', () => {
+      console.log('right arrow is being clicked');
+      arrowIncrementIndex();
+    console.log(arrowIndex);
+  });
 }
-
-
